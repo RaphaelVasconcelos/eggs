@@ -20,7 +20,7 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // delay(context);
+    delay(context);
     return Scaffold(
       body: Column(
         children: <Widget>[
