@@ -22,7 +22,7 @@ class AppBloc extends ChangeNotifier {
       case "soft":
         {
           selected = "soft";
-          time = 5.0 * 60.0;
+          time = 0.1 * 60.0;
           notifyListeners();
           return;
         }
@@ -61,7 +61,7 @@ class AppBloc extends ChangeNotifier {
 
   stop() {
     timer.cancel();
-    state = "stoped";
+    state = "stopped";
     seconds = 0;
     percent = 0;
     notifyListeners();
